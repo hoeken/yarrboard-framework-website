@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home Assistant
-nav_order: 9
+nav_order: 10
 description: "Automatic MQTT discovery, topic structure, and device information for Home Assistant integration."
 ---
 

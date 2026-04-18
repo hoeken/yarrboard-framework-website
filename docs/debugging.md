@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Debugging & Logging
-nav_order: 11
+nav_order: 12
 description: "Multi-output logging, core dump support, and debug output features."
 ---
 
@@ -37,4 +37,4 @@ Automatic detection and extraction of ESP32 core dumps:
 
 ---
 
-[← Previous: Hardware & Performance](hardware.md) \| [Next: JavaScript API →](javascript-api.md)
+[← Previous: Hardware & Performance](hardware.md) \| [Next: Contributing & Support →](contributing.md)

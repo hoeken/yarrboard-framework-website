@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Installation
-nav_order: 3
+nav_order: 4
 description: "Installing the library via PlatformIO, build system configuration, and dependencies."
 ---
 
@@ -93,4 +93,4 @@ Core libraries managed via PlatformIO:
 
 ---
 
-[← Previous: Architecture](architecture.md) \| [Next: Usage Guide →](usage.md)
+[← Previous: Frontend Architecture](frontend-architecture.md) \| [Next: Usage Guide →](usage.md)

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Hardware & Performance
-nav_order: 10
+nav_order: 11
 description: "System limits, performance monitoring, supported ESP32 targets, and memory usage."
 ---
 

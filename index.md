@@ -53,4 +53,4 @@ Dynamic JSON-based command protocol with:
 
 ---
 
-[Next: Architecture →](docs/architecture.md)
+[Next: Architecture →](docs/backend-architecture.md)

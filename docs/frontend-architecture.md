@@ -1,7 +1,7 @@
 ---
 layout: default
-title: JavaScript API
-nav_order: 12
+title: Frontend Architecture
+nav_order: 3
 description: "Frontend JavaScript API for building custom web interfaces with the YB namespace."
 ---
 
@@ -475,4 +475,4 @@ The build system automatically processes these files and embeds them in the firm
 
 ---
 
-[← Previous: Debugging & Logging](debugging.md) \| [Next: Contributing & Support →](contributing.md)
+[← Previous: Backend Architecture](backend-architecture.md) \| [Next: Installation →](installation.md)

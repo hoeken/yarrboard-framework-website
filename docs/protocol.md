@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Protocol Reference
-nav_order: 6
+nav_order: 7
 description: "JSON command protocol over WebSocket, HTTP, Serial, and MQTT transports."
 ---
 

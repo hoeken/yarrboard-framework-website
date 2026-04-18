@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Architecture
+title: Backend Architecture
 nav_order: 2
 description: "Controller-based design, built-in controllers, channel system, and design philosophy."
 ---
 
-# Architecture
+# Backend Architecture
 
 ## Controller-Based Design
 
@@ -96,4 +96,4 @@ Channels inherit from `BaseChannel` and implement:
 
 ---
 
-[← Previous: Home](../index.md) \| [Next: Installation →](installation.md)
+[← Previous: Home](../index.md) \| [Next: Frontend Architecture →](frontend-architecture.md)

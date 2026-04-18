@@ -1,7 +1,7 @@
 ---
 layout: default
 title: OTA Updates
-nav_order: 8
+nav_order: 9
 description: "Development and production over-the-air firmware update support."
 ---
 
