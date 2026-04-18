@@ -45,4 +45,4 @@ Built on excellent open-source libraries:
 
 ---
 
-[← Previous: JavaScript API](javascript-api.md)
+[← Previous: JavaScript API](javascript-api.md) | [Next: Changelog →](changelog.md)
