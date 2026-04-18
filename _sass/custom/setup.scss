@@ -1,0 +1,36 @@
+$link-color: #0d6efd;
+
+.img-main {
+  float: right;
+  width: 50%;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+
+  @media (max-width: 576px) {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.img-right {
+  float: right;
+  width: 250px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+
+  @media (max-width: 576px) {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+h1, h2
+{
+  clear: both;
+}
+
+.warning, .note, .new {
+  clear: both;
+}

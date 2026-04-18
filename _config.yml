@@ -1,0 +1,38 @@
+title: Yarrboard Framework
+description: Full stack IOT framework for ESP32 - HTTP, Websockets, MQTT, OTA and more.
+remote_theme: just-the-docs/just-the-docs@v0.10.1
+
+url: ""
+baseurl: ""
+
+logo: "/logo.png"
+favicon_ico: "/favicon.ico"
+search_enabled: true
+heading_anchors: true
+
+aux_links:
+  "GitHub":
+    - "https://github.com/hoeken/YarrboardFramework"
+
+callouts:
+  note:
+    title: Note
+    color: blue
+  new:
+    title: New
+    color: green
+  warning:
+    title: Warning
+    color: red
+
+footer_content: "YarrboardFramework is open source under MPL-2.0.  Part of the <a href=\"https://yarrboard.com\">Yarrboard</a> ecosystem."
+
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub."
+gh_edit_repository: "https://github.com/hoeken/yarrboard-framework-website" # the github URL for your repo
+gh_edit_branch: "main" # the branch that your docs is served from
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+
+plugins:
+  - jekyll-remote-theme
