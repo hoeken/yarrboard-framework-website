@@ -8,26 +8,19 @@ description: "Development and production over-the-air firmware update support."
 # OTA Updates
 
 ## Development Mode (Arduino OTA)
-- Enabled via PlatformIO upload
-- Password-protected
-- mDNS-based discovery
-- Used during firmware development
+- Enables direct PlatformIO upload OTA
+- Must opt-in in `Settings -> Miscellaneous`
+- Intended for firmware development
 
 ## Production Mode (esp32FOTA)
+- Smooth OTA process through web UI
+- Supports markdown Changelogs for end user
 - HTTP/HTTPS firmware downloads
 - RSA signature verification with public key
 - Firmware manifest URL for version checking
 - Progress callbacks for UI updates
 - Automatic rollback on boot failure
-
-## Firmware Manifest
-```json
-{
-  "version": "1.2.0",
-  "url": "https://example.com/firmware.bin",
-  "signature": "base64-encoded-signature"
-}
-```
+- Build script to generate binaries and json
 
 ---
 

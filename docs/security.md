@@ -31,6 +31,11 @@ Optional SSL/TLS support:
 - Configurable via PsychicHttp
 - Resource-intensive on ESP32 (limit concurrent connections)
 
+## Secure MQTT Support
+
+Optional SSL/TLS support:
+- Custom certificate and private key
+
 ---
 
 [← Previous: Protocol Reference](protocol.md) \| [Next: OTA Updates →](ota.md)

@@ -13,9 +13,9 @@ description: "Project structure, basic integration, and implementing custom cont
 MyProject/
 ├── platformio.ini        # PlatformIO configuration
 ├── packages.json         # node.js configuration
-├── src/
+├── src/                  # Backend code lives here
 │   └── main.cpp          # Application entry point
-├── html/
+├── html/                 # Frontend code lives here
 │   ├── index.html        # Custom web UI (optional)
 │   ├── logo.png          # Project logo
 │   ├── js/               # Custom JavaScript
