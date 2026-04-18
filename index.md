@@ -2,15 +2,13 @@
 layout: default
 title: Home
 nav_order: 1
-description: "A comprehensive IoT application framework for ESP32 microcontrollers with modern web-based configuration and control."
+description: "A full stack IoT framework for ESP32 microcontrollers with modern web-based configuration and control."
 permalink: /
 ---
 
 # Yarrboard Framework
 
-**A comprehensive IoT application framework for ESP32 microcontrollers with modern web-based configuration and control.**
-
-YarrboardFramework provides a complete embedded web server infrastructure for building ESP32-based IoT devices. Designed for reuse across multiple firmware projects, it delivers a standardized, production-ready-ish foundation with rich web interfaces, multi-protocol support, and home automation integration.
+YarrboardFramework is a full stack framework for building ESP32-based IoT devices with rich, real-time web interfaces. It combines an embedded web server, a controller-driven backend architecture, and a unified JSON command protocol across multiple transports. With a fully integrated HTML/CSS/JS build pipeline and WebSocket-powered UI, it enables responsive, modern device interfaces without external dependencies.
 
 ## License
 
@@ -22,7 +20,7 @@ All framework source code is licensed under MPL-2.0, allowing commercial use and
 
 ### Core Capabilities
 
-- **Web-Based Configuration**: Modern single-page application with real-time updates via WebSocket
+- **Web-Based Configuration**: Modern single-file application with real-time updates via WebSocket
 - **JSON-Based Multi-Protocol**: Use the same JSON commands over Websocket, HTTP, Serial, or MQTT
 - **Home Assistant Integration**: Automatic MQTT discovery protocol implementation
 - **OTA Firmware Updates**: Development (Arduino OTA) and production (signed esp32FOTA) support
@@ -35,7 +33,7 @@ All framework source code is licensed under MPL-2.0, allowing commercial use and
 ### Protocol System
 
 Dynamic JSON-based command protocol with:
-- Registration of up to 50 commands (configurable via `YB_PROTOCOL_MAX_COMMANDS`)
+- Runtime modification to add/remove commands
 - Role-based command access control
 - Support for WebSocket, HTTP API, Serial, and MQTT interfaces
 - Message rate limiting and statistics
@@ -46,10 +44,12 @@ Dynamic JSON-based command protocol with:
 
 - Bootstrap 5 responsive design with dark/light themes
 - Real-time data updates via WebSocket
-- Pages: Control, Status, Config, Settings, System
+- Home/Control page for main app UI
+- Status page with detailed information about device
+- Settings page for device configuration (network, auth, web server, mqtt)
+- System page for firmware updates, config management
 - Gzip-compressed assets embedded in firmware
 - SHA256 ETag-based caching
-- Offline-capable operation
 
 ---
 
