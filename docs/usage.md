@@ -12,13 +12,14 @@ description: "Project structure, basic integration, and implementing custom cont
 ```
 MyProject/
 ├── platformio.ini        # PlatformIO configuration
+├── packages.json         # node.js configuration
 ├── src/
 │   └── main.cpp          # Application entry point
 ├── html/
 │   ├── index.html        # Custom web UI (optional)
 │   ├── logo.png          # Project logo
 │   ├── js/               # Custom JavaScript
-│   └── style.css         # Custom CSS
+│   └── css/              # Custom CSS
 ```
 
 ## Basic Integration

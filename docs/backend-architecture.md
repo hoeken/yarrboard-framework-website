@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Backend Architecture
-nav_order: 2
+nav_order: 3
 description: "Controller-based design, built-in controllers, channel system, and design philosophy."
 ---
 
@@ -78,7 +78,6 @@ Channels inherit from `BaseChannel` and implement:
 4. **Real-time First**: WebSocket-based live updates for responsive UIs
 5. **Type Safety**: ETL for fixed-size containers without heap allocation
 6. **Embedded-Friendly**: Careful memory management, no exceptions
-7. **Developer Experience**: Hot-reload, OTA updates, comprehensive logging
 
 ### Architectural Patterns
 
@@ -91,9 +90,8 @@ Channels inherit from `BaseChannel` and implement:
 
 - **Single-Threaded Main Loop**: Must not block
 - **No Exceptions**: Embedded-friendly error handling
-- **Static Memory**: ETL containers prevent fragmentation
 - **ESP32-S3 Focus**: Other ESP32 variants supported but not primary target
 
 ---
 
-[← Previous: Home](../index.md) \| [Next: Frontend Architecture →](frontend-architecture.md)
+[← Previous: Frontend Architecture](frontend-architecture.md) \| [Next: Installation →](installation.md)

@@ -51,34 +51,9 @@ extra_scripts =
     pre:scripts/git_version.py   # Embed git version
 ```
 
-### Web Asset Build Process
+### Node.js
 
-The framework uses Gulp to process web assets:
-
-1. **HTML/CSS/JS Processing**:
-   - Inlines all CSS and JavaScript
-   - Minifies HTML, CSS, and JavaScript
-   - Encodes images as base64 data URIs
-   - Gzip compresses the final output
-   - Generates C header files with GulpedFile structures
-   - Calculates SHA256 for ETag-based caching
-
-2. **Generated Headers**:
-   ```cpp
-   // GulpedFile structure definition
-   struct GulpedFile {
-     const uint8_t* data;      // Pointer to the file data array
-     size_t length;            // Length of the data in bytes
-     const char* sha256;       // SHA-256 hash as hex string
-     const char* filename;     // Original filename (e.g., "logo.png")
-     const char* mimetype;     // MIME type (e.g., "image/png")
-   };
-   ```
-
-3. **Automatic Build**:
-   - PlatformIO `pre:` scripts run Gulp automatically before compilation
-   - Git version script embeds commit hash and build timestamp
-   - No manual build step required
+Run ```npm install``` in order to install gulp and related tools for building the static html + javascript + css + image assets as files that can be embedded directly into the firmware.
 
 ### Dependencies
 

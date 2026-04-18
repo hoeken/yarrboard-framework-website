@@ -1,13 +1,13 @@
 ---
 layout: default
 title: Frontend Architecture
-nav_order: 3
+nav_order: 2
 description: "Frontend JavaScript API for building custom web interfaces with the YB namespace."
 ---
 
 # Frontend JavaScript API
 
-The YarrboardFramework provides a comprehensive JavaScript API for building custom web interfaces. The frontend code is organized into modules under the global `YB` namespace.
+The YarrboardFramework provides boilerplate HTML code and a JavaScript API for building custom web interfaces. The frontend code is organized into modules under the global `YB` namespace.
 
 ## Core Components
 
@@ -292,9 +292,6 @@ Logging functions for debugging:
 // Log messages (appear in console and debug terminal)
 YB.log("Something happened");
 YB.log(`Variable value: ${value}`);
-
-// Setup debug terminal (done automatically)
-YB.log.setupDebugTerminal();
 ```
 
 ## WebSocket Client (YB.client)
@@ -308,7 +305,7 @@ YB.client.send({
 });
 
 // Send with priority (bypasses queue)
-YB.client.send({ cmd: "urgent" }, true);
+YB.client.send({ cmd: "urgent_command" }, true);
 
 // Client connection events are handled automatically
 // But you can check connection status:
@@ -471,8 +468,35 @@ When customizing the web interface, edit these files:
 - `html/style.css` - Custom CSS styles
 - `html/logo.png` - Your project logo
 
-The build system automatically processes these files and embeds them in the firmware.
+## Web Asset Build Process
+
+The framework uses Gulp to process these files and embeds them into the firmware:
+
+1. **HTML/CSS/JS Processing**:
+   - Inlines all CSS and JavaScript
+   - Minifies HTML, CSS, and JavaScript (optionally)
+   - Encodes images as base64 data URIs
+   - Gzip compresses the final output
+   - Generates C header files with GulpedFile structures
+   - Calculates SHA256 for ETag-based caching
+
+2. **Generated Headers**:
+   ```cpp
+   // GulpedFile structure definition
+   struct GulpedFile {
+     const uint8_t* data;      // Pointer to the file data array
+     size_t length;            // Length of the data in bytes
+     const char* sha256;       // SHA-256 hash as hex string
+     const char* filename;     // Original filename (e.g., "logo.png")
+     const char* mimetype;     // MIME type (e.g., "image/png")
+   };
+   ```
+
+3. **Automatic Build**:
+   - PlatformIO `pre:` scripts run Gulp automatically before compilation
+   - Git version script embeds commit hash and build timestamp
+   - No manual management of html, css, js, or images required
 
 ---
 
-[← Previous: Backend Architecture](backend-architecture.md) \| [Next: Installation →](installation.md)
+[← Previous: Home](../index.md) \| [Next: Backend Architecture →](backend-architecture.md)
