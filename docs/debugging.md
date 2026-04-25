@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Debugging & Logging
-nav_order: 12
+nav_order: 13
 description: "Multi-output logging, core dump support, and debug output features."
 ---
 

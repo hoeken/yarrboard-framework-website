@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Hardware & Performance
-nav_order: 11
+nav_order: 12
 description: "System limits, performance monitoring, supported ESP32 targets, and memory usage."
 ---
 
@@ -68,4 +68,4 @@ The firmware compiles for the other targets, but has not been tested yet.
 
 ---
 
-[← Previous: Home Assistant](home-assistant.md) \| [Next: Debugging & Logging →](debugging.md)
+[← Previous: MFD Integration](mfd-integration.md) \| [Next: Debugging & Logging →](debugging.md)

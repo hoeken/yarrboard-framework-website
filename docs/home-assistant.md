@@ -44,4 +44,4 @@ Automatically included in all discovery messages:
 
 ---
 
-[← Previous: OTA Updates](ota.md) \| [Next: Hardware & Performance →](hardware.md)
+[← Previous: OTA Updates](ota.md) \| [Next: MFD Integration →](mfd-integration.md)

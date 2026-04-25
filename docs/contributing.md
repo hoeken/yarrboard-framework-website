@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Contributing & Support
-nav_order: 13
+nav_order: 14
 description: "Examples, contributing guidelines, support resources, and acknowledgments."
 ---
 

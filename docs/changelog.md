@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Changelog
-nav_order: 14
+nav_order: 15
 description: "Version history and changelog for the YarrboardFramework."
 ---
 
